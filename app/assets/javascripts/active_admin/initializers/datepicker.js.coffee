@@ -5,7 +5,7 @@ onDOMReady = ->
     # Only create datepickers in compatible browsers
     return if input[0].type is 'date'
 
-    defaults = dateFormat: 'yy-mm-dd'
+    defaults = dateFormat: 'dd.mm.yy'
     options  = input.data 'datepicker-options'
     input.datepicker $.extend(defaults, options)
 
